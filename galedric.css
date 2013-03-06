@@ -1,0 +1,141 @@
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans");
+
+* {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "Droid Sans", sans-serif;
+	font-size: 14px;
+	color: #fff;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-image: url("backgrounds/4.jpg");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+/* GRID */
+
+.grid {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.grid.col1 { width: 230px; margin-left: -115px; }
+.grid.col2 { width: 460px; margin-left: -230px; }
+.grid.col3 { width: 690px; margin-left: -345px; }
+.grid.col4 { width: 920px; margin-left: -460px; }
+
+.grid.row1 { height: 150px; margin-top: -75px; }
+.grid.row2 { height: 300px; margin-top: -150px; }
+.grid.row3 { height: 450px; margin-top: -225px; }
+.grid.row4 { height: 600px; margin-top: -300px; }
+.grid.row5 { height: 750px; margin-top: -375px; }
+
+/* TILE */
+
+.tile {
+	float: left;
+	width: 230px;
+	height: 150px;
+	position: relative;
+	background: rgba(0, 0, 0, 0.5);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.tile.span2 {
+	width: 460px;
+}
+
+.tile > div {
+	height: 100%;
+	width: 100%;
+	
+	background: rgba(0,0,0,0);
+	
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	-transition: background 0.2s;
+}
+
+.tile:hover > div {
+	background: rgba(0,0,0,0.1);
+}
+
+.tile h2 {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	font-weight: 400;
+	font-size:24px;
+}
+
+.tile h2 span {
+	display: block;
+	font-size: 14px;
+}
+
+/* - - - Tiles - - - */
+
+.tile.me {
+	background-image: url("tiles/me.png");
+}
+
+.tile.mail {
+	background-color: rgba(240,190,0,0.80);
+	background-image: url("tiles/mail.png");
+}
+
+.tile.twitter {
+	background-color: rgba(103,193,17,0.80);
+	background-image: url("tiles/twitter.png");
+}
+
+.tile.github {
+	background-color: rgba(1,189,227,0.80);
+	background-image: url("tiles/github.png");
+}
+
+.tile.facebook {
+	background: rgba(205,31,20,0.80);
+	background-image: url("tiles/facebook.png");
+}
+
+/* - - - Retina Tiles - - - */
+
+@media screen and (-webkit-min-device-pixel-ratio:2), screen and (max--moz-device-pixel-ratio:2) {
+	.tile {
+		background-size: contain;
+	}
+	
+	.tile.me {
+		background-image: url("tiles/me@2x.png");
+	}
+	
+	.tile.mail {
+		background-image: url("tiles/mail@2x.png");
+	}
+	
+	.tile.twitter {
+		background-image: url("tiles/twitter@2x.png");
+	}
+	
+	.tile.github {
+		background-image: url("tiles/github@2x.png");
+	}
+	
+	.tile.facebook {
+		background-image: url("tiles/facebook@2x.png");
+	}
+}

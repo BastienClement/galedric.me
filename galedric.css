@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-	background-image: url("backgrounds/4.jpg");
+	background-image: url("/backgrounds/4.jpg");
 	background-position: 0px center;
 	background-repeat: no-repeat;
 }
@@ -89,27 +89,27 @@ body {
 /* - - - Tiles - - - */
 
 .tile.me {
-	background-image: url("tiles/me.png");
+	background-image: url("/tiles/me.png");
 }
 
 .tile.mail {
 	background-color: rgba(240,190,0,0.80);
-	background-image: url("tiles/mail.png");
+	background-image: url("/tiles/mail.png");
 }
 
 .tile.twitter {
 	background-color: rgba(103,193,17,0.80);
-	background-image: url("tiles/twitter.png");
+	background-image: url("/tiles/twitter.png");
 }
 
 .tile.github {
 	background-color: rgba(1,189,227,0.80);
-	background-image: url("tiles/github.png");
+	background-image: url("/tiles/github.png");
 }
 
 .tile.facebook {
 	background: rgba(205,31,20,0.80);
-	background-image: url("tiles/facebook.png");
+	background-image: url("/tiles/facebook.png");
 }
 
 /* - - - Retina Tiles - - - */
@@ -120,22 +120,22 @@ body {
 	}
 	
 	.tile.me {
-		background-image: url("tiles/me@2x.png");
+		background-image: url("/tiles/me@2x.png");
 	}
 	
 	.tile.mail {
-		background-image: url("tiles/mail@2x.png");
+		background-image: url("/tiles/mail@2x.png");
 	}
 	
 	.tile.twitter {
-		background-image: url("tiles/twitter@2x.png");
+		background-image: url("/tiles/twitter@2x.png");
 	}
 	
 	.tile.github {
-		background-image: url("tiles/github@2x.png");
+		background-image: url("/tiles/github@2x.png");
 	}
 	
 	.tile.facebook {
-		background-image: url("tiles/facebook@2x.png");
+		background-image: url("/tiles/facebook@2x.png");
 	}
 }
